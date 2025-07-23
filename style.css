@@ -411,4 +411,39 @@ h1 {
     padding: 12px 4vw 12px 4vw;
     bottom: 60px;
   }
+}.message {
+  padding: 10px 14px;
+  border-radius: 12px;
+  margin: 8px 0;
+  max-width: 80%;
+  word-wrap: break-word;
+  line-height: 1.4;
+  font-size: 15px;
 }
+
+.message.user {
+  align-self: flex-end;
+  background-color: #3bb0ff;
+  color: #fff;
+  text-align: right;
+  border-bottom-right-radius: 2px;
+}
+
+.message.bot {
+  align-self: flex-start;
+  background-color: #ffffff22;
+  color: #eee;
+  border-bottom-left-radius: 2px;
+}
+
+.message.typing {
+  font-style: italic;
+  opacity: 0.8;
+}
+
+/* Flex column layout for chatbot messages */
+.chatbot-panel .chatbot-messages {
+  display: flex;
+  flex-direction: column;
+}
+
